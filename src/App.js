@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Strategy from './Components/Strategy'
 
 function App() {
   return (
@@ -11,12 +12,7 @@ function App() {
           <input type="number" />
         </div>
         <div>
-          <select name="Strategy">
-            <option value="Taipei">台北</option>　
-            <option value="Taoyuan">桃園</option>　
-            <option value="Hsinchu">新竹</option>　
-            <option value="Miaoli">苗栗</option>
-          </select>
+          <Strategy/>
         </div>
         <div>
           <button>模擬</button>
