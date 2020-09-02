@@ -1,22 +1,22 @@
 import React, { Component } from "react";
-import * as d3 from "d3";
+import { CsvToHtmlTable } from "react-csv-to-table";
+// import * as d3 from "d3";
 
 class Strategy extends Component {
-  getData = () => {
-    d3.csv('https://raw.githubusercontent.com/soslab106/blockchain/master/src/csv/AssociationStock.csv', function (data) {
-      console.log(data);
-    });
-  };
+  // getData = () => {
+  //   d3.csv(
+  //     "https://raw.githubusercontent.com/soslab106/blockchain/master/src/csv/AssociationStock.csv",
+  //     function (data) {
+  //       console.log(data);
+  //     }
+  //   );
+  // };
 
   render() {
-    this.getData()
     return (
-      <select name="Strategy">
-        <option value="Taipei">台北</option>　
-        <option value="Taoyuan">桃園</option>　
-        <option value="Hsinchu">新竹</option>　
-        <option value="Miaoli">苗栗</option>
-      </select>
+      <>
+        {this.props.data}
+      </>
     );
   }
 }
