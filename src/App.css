@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+label,
+input {
+  display: inline-block;
+}
